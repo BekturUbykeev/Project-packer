@@ -5,7 +5,7 @@ data "aws_ami" "wordpress" {
 
   filter {
     name   = "name"
-    values = ["wordpress-image-1739649968"] 
+    values = ["wordpress-image-1739662377"] # add name of your AMI
   }
 } 
 

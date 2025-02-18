@@ -11,7 +11,7 @@ data "aws_ami" "wordpress" {
 
 
 resource "aws_instance" "main" {
-  ami           = data.aws_ami.wordpress.id
+  ami           = data.aws_ami.wordpress.id #gweu
   instance_type = var.instance_type
   subnet_id = aws_subnet.main.id
   key_name = aws_key_pair.deployer.key_name
